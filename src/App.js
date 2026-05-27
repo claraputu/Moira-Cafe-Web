@@ -77,7 +77,7 @@ function App() {
             <a href="#tentang">Tentang Kita</a>
             <a href="#menu">Menu</a>
           </div>
-          <a href="#" className="hero-logo">Moira</a>
+          <a href="/" className="hero-logo">Moira</a>
           <div className="hero-nav-group">
             <a href="#gallery">Galeri</a>
             <a href="#reservasi">Reservasi</a>
