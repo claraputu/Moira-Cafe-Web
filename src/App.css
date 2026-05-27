@@ -199,7 +199,7 @@ button {
 
 .circle-top-left {
   top: -80px;
-  left: -80px;
+  left: -120px;
   width: 380px;
   height: 380px;
   border: 44px solid #FFFFFF;
@@ -260,8 +260,8 @@ button {
 }
 
 .hero-main-logo {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
+  font-family: 'Brasika Display', serif;
+  font-weight: 400;
   color: #FFFFFF;
   font-size: clamp(6rem, 12vw, 8.5rem);
   letter-spacing: 0.01em;
