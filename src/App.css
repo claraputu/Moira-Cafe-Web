@@ -15,7 +15,7 @@
 }
 
 :root {
-  color-scheme: light;
+  color-scheme: only light;
   --bg: #ffffff;
   --surface: #ffffff;
   --surface-soft: #f8fbff;
@@ -31,11 +31,13 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   margin: 0;
   font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: #ffffff !important;
   background: #ffffff !important;
   color: var(--text);
+  color-scheme: only light;
 }
 
 .hero::before,
@@ -2273,10 +2275,10 @@ h2.gallery-maintitle {
 
 .video-modal-content {
   position: relative;
-  width: 90%;
-  max-width: 340px;
-  height: 600px;
-  max-height: 85vh;
+  height: 80vh;
+  max-height: 720px;
+  max-width: 90vw;
+  aspect-ratio: 9 / 16;
   background: #000;
   border-radius: 16px;
   box-shadow: 0 24px 64px rgba(0, 0, 0, 0.6);
@@ -2291,7 +2293,7 @@ h2.gallery-maintitle {
 .video-modal-close {
   position: absolute;
   top: -46px;
-  right: -8px;
+  right: 0px; /* Diubah agar aman berada di dalam viewport pada layar HP */
   background: transparent;
   color: #FFFFFF;
   border: none;
