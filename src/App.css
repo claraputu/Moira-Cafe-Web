@@ -1786,19 +1786,33 @@ h2.gallery-maintitle {
 }
 
 @media (max-width: 980px) {
+
+  /* Explicitly force bold on local/system font fallbacks for mobile/tablet */
+  .hero-main-logo,
+  .hero-logo,
+  .about-title,
+  .menu-maintitle,
+  .testi-title,
+  .reservation-maintitle {
+    font-weight: 700 !important;
+  }
+
   /* Scale down topbar items */
   .hero-topbar {
     padding: 4px 8px;
     gap: 8px;
   }
+
   .hero-nav-group {
     gap: 12px;
   }
+
   .hero-topbar .hero-nav-group a {
     min-width: 100px;
     padding: 6px 10px;
     font-size: 0.85rem;
   }
+
   .hero-logo {
     font-size: 1.8rem;
     padding: 6px 12px;
@@ -1808,20 +1822,25 @@ h2.gallery-maintitle {
   .hero-main-logo {
     font-size: clamp(4.5rem, 10vw, 7rem);
   }
+
   .hero-tagline {
     font-size: 1.05rem;
   }
+
   .hero-timecards {
     right: 20px;
     bottom: 20px;
     gap: 8px;
   }
+
   .time-card {
     padding: 8px 16px;
   }
+
   .time-card span {
     font-size: 0.6rem;
   }
+
   .time-card strong {
     font-size: 0.8rem;
   }
@@ -1934,6 +1953,7 @@ h2.gallery-maintitle {
     padding: 0 12px;
     margin-top: 20px;
   }
+
   .hero-topbar {
     display: flex;
     flex-wrap: wrap;
@@ -1943,6 +1963,7 @@ h2.gallery-maintitle {
     padding: 12px 16px;
     border-radius: 28px;
   }
+
   .hero-logo {
     order: 1;
     width: 100%;
@@ -1952,22 +1973,26 @@ h2.gallery-maintitle {
     margin-bottom: 2px;
     letter-spacing: 0.04em;
   }
+
   .hero-nav-group {
     order: 2;
     display: flex;
     gap: 8px;
   }
+
   .hero-topbar .hero-nav-group a {
     min-width: auto;
     font-size: 0.85rem;
     padding: 6px 12px;
     letter-spacing: 0.05em;
+    font-weight: 600;
   }
 
   /* Hero Section Mobile adjustments with larger font sizes */
   .hero {
     padding: 0 12px 60px;
   }
+
   .hero-inner {
     min-height: 450px;
     height: 450px;
@@ -1975,6 +2000,7 @@ h2.gallery-maintitle {
     padding: 36px 16px;
     justify-content: flex-start;
   }
+
   .circle-top-left {
     width: 200px;
     height: 200px;
@@ -1982,6 +2008,7 @@ h2.gallery-maintitle {
     top: -50px;
     left: -70px;
   }
+
   .circle-bottom-right {
     width: 160px;
     height: 160px;
@@ -1989,13 +2016,16 @@ h2.gallery-maintitle {
     bottom: -25px;
     right: -35px;
   }
+
   .hero-main-content {
     margin-top: -10px;
     z-index: 15;
   }
+
   .hero-main-logo {
     font-size: clamp(3.2rem, 15vw, 4.8rem);
   }
+
   .hero-tagline {
     font-size: clamp(0.9rem, 3.2vw, 1.1rem);
     margin-top: 8px;
@@ -2010,12 +2040,14 @@ h2.gallery-maintitle {
     bottom: 5%;
     top: auto;
   }
+
   .hero-coffee {
     height: 88%;
     right: -10px;
     bottom: 0;
     top: auto;
   }
+
   .hero-food {
     height: 45%;
     right: 15px;
@@ -2030,16 +2062,20 @@ h2.gallery-maintitle {
     bottom: 16px;
     right: 16px;
   }
+
   .time-card {
     padding: 8px 14px;
     border-radius: 12px;
   }
+
   .time-card span {
     font-size: clamp(0.65rem, 2.2vw, 0.75rem);
   }
+
   .time-card strong {
     font-size: clamp(0.85rem, 2.8vw, 0.95rem);
     margin-top: 2px;
+    font-weight: 700;
   }
 
   /* Scaled-down Play Button fitting nicely in the bottom cutout */
@@ -2049,6 +2085,7 @@ h2.gallery-maintitle {
     border-width: 12px;
     bottom: -55px;
   }
+
   .hero-play svg {
     width: 32px;
     height: 32px;
