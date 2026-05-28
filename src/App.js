@@ -104,7 +104,7 @@ function App() {
           <div className="hero-timecards">
             <div className="time-card">
               <span>Senin & Jumat</span>
-              <strong>14 AM – 10 PM</strong>
+              <strong>2 PM – 10 PM</strong>
             </div>
             <div className="time-card">
               <span>Selasa – Minggu</span>
@@ -592,15 +592,15 @@ function App() {
 
               <div className="hour-card anchor-left">
                 <div className="hour-badge">
-                  <span className="day">Senin - Kamis</span>
-                  <span className="time">8AM - 6PM</span>
+                  <span className="day">Senin & Jumat</span>
+                  <span className="time">2 PM - 10 PM</span>
                 </div>
               </div>
 
               <div className="hour-card anchor-left" style={{ marginTop: "24px" }}>
                 <div className="hour-badge">
-                  <span className="day">Jumat</span>
-                  <span className="time">10AM - 7 PM</span>
+                  <span className="day">Selasa - Minggu</span>
+                  <span className="time">10 AM - 10 PM</span>
                 </div>
               </div>
             </div>
