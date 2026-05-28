@@ -655,6 +655,8 @@ button {
   justify-content: center;
   gap: 32px;
   margin-bottom: 40px;
+  position: relative;
+  z-index: 10; /* Ensure it sits above overlapping scaled photos and remains clickable */
 }
 
 .tab {
@@ -713,6 +715,7 @@ button {
   border-radius: 24px;
   overflow: hidden;
   margin-bottom: 24px;
+  pointer-events: none; /* Prevent scaled images from blocking any click/touch events */
 }
 
 .menu-photo img {
