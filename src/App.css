@@ -1881,9 +1881,55 @@ h2.gallery-maintitle {
   .hero-body,
   .about-card,
   .new-product-card,
-  .menu-grid,
+  .menu-container,
   .testimonials-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* Responsive single-column menu fixes to prevent overlaps on mobile */
+  .menu-container {
+    padding: 24px 16px;
+    gap: 24px;
+  }
+
+  .menu-divider {
+    display: none;
+  }
+
+  .anchor-right .menu-title-badge,
+  .anchor-left .menu-title-badge,
+  .anchor-right-outer .menu-title-badge,
+  .anchor-right-bottom.menu-title-badge {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding-right: 24px !important;
+    padding-left: 24px !important;
+    border-radius: 12px !important;
+  }
+
+  .anchor-right .menu-title-badge::after,
+  .anchor-left .menu-title-badge::after,
+  .anchor-right-outer .menu-title-badge::after,
+  .anchor-right-bottom.menu-title-badge::after {
+    display: none !important;
+  }
+
+  .menu-desc-text,
+  .menu-variants {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .variant-price {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding-right: 24px !important;
+    padding-left: 24px !important;
+    border-radius: 12px !important;
+  }
+
+  .variant-price::after {
+    display: none !important;
   }
 
   .reservation-container {
@@ -2097,6 +2143,29 @@ h2.gallery-maintitle {
     width: 32px;
     height: 32px;
     margin-left: 4px;
+  }
+
+  /* Mobile horizontally-scrollable and swipeable menu category tabs bar */
+  .menu-tabs {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 8px 16px;
+    width: 100%;
+    position: relative;
+    z-index: 20; /* Keep tab buttons on top and perfectly clickable */
+    scrollbar-width: none; /* Hide scrollbar Firefox */
+  }
+  .menu-tabs::-webkit-scrollbar {
+    display: none; /* Hide scrollbar Chrome/Safari */
+  }
+  .tab {
+    flex-shrink: 0; /* Keep pills from squishing */
+    font-size: 0.9rem;
+    padding: 8px 16px;
   }
 
   .section {
