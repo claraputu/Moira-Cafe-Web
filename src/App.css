@@ -1788,16 +1788,6 @@ h2.gallery-maintitle {
 
 @media (max-width: 980px) {
 
-  /* Explicitly force bold on local/system font fallbacks for mobile/tablet */
-  .hero-main-logo,
-  .hero-logo,
-  .about-title,
-  .menu-maintitle,
-  .testi-title,
-  .reservation-maintitle {
-    font-weight: 700 !important;
-  }
-
   /* Scale down topbar items */
   .hero-topbar {
     padding: 4px 8px;
