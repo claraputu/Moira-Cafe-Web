@@ -2308,3 +2308,10 @@ h2.gallery-maintitle {
 .video-modal-close:hover {
   color: var(--primary);
 }
+
+@media (max-width: 480px) {
+  .video-modal-content {
+    height: 82vh;
+    max-width: 95vw;
+  }
+}

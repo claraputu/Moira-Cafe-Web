@@ -726,7 +726,7 @@ function App() {
           <button className="video-modal-close" onClick={() => setIsVideoModalOpen(false)}>&times;</button>
           {isVideoModalOpen && (
             <iframe
-              src="https://www.tiktok.com/embed/v2/7591039051797368072"
+              src="https://www.tiktok.com/player/v1/7591039051797368072"
               width="100%"
               height="100%"
               style={{ border: 'none', borderRadius: '16px' }}
